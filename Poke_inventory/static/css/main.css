@@ -1,0 +1,192 @@
+/*BACKGROUND & fade-in*/
+body {
+    background-image:url(../images/SeamlessBG.jpg);
+    background-repeat: repeat;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.container{
+    margin-top: 85px;
+}
+
+/*Nav Styles */
+.ct-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Target Main Logo Image */
+.ct-nav img{
+    width: 50px;
+    max-width: 50px;
+    margin-left: 2vw;
+    margin-top:5px;
+}
+
+.ct-nav{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    margin-bottom: 5%;
+    border-bottom:1px solid rgb(54, 54, 54);
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display:inline;
+    justify-content: center;
+    text-decoration:none;
+    padding: 0.5vw;
+    color:rgb(105, 105, 105);
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    text-decoration:underline;
+    font-weight:bolder;
+}
+
+ul#horizontal-list a:hover{
+    font-size:larger;
+}
+
+/* End of Nav Styles */
+
+/*Start of Hero/Header Section*/
+
+#header-text{
+    padding: 2vw;
+    margin-bottom: 2vw;
+    justify-content:center;
+    color: white;
+}
+
+.header-image{
+    width:50%;
+    max-width: 100%;
+    margin-bottom:5%;
+    margin-left: 5%;
+}
+
+/*End of Hero/Header section*/
+
+/*Start of Feat. Section*/
+#api-image, #graphql-image, #database-image{
+    margin-bottom: 10vh;
+}
+
+#features-section{
+    margin: 8vw;
+}
+/*End of Feat section*/
+
+/*Community Section*/
+#Poke-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+/*End of Community Section*/
+
+/*Footer Section*/
+
+.footer-text-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    margin-left:15vw;
+}
+
+#footer-logo {
+    width: 50%;
+    max-width: 100%;
+    margin-top: 25%;
+    margin-left: 10vw;
+}
+
+#footer {
+    border-top: 1px solid rgb(66, 66, 66);
+    margin-top: 20vh;
+    color:white;
+}
+
+
+/*Profile Styles*/
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    left: 20rem;
+    top: 10rem;
+    color: white;
+}
+
+.container-content{
+    color:white;
+}
+
+/*Carousel*/
+#carouselExampleCaptions img {
+    max-width: 700px;
+    margin: auto;
+  }
+
+/*Form Group*/
+.form-group, .signup-text{
+    display:grid;
+    color: white;
+    justify-content:center;
+    margin-top:5vw;
+}
+
+.form-group, .signin-text{
+    display:grid;
+    color:white;
+    justify-content:center;
+    margin-top:5vw;
+}
+/*Submit Button*/
+.submit-button{
+    margin-top:5%;
+}
+
+/*Add to Team page*/
+.workinprogress{
+    color:white;
+}
+.wrench{
+    width:50px;
+}
+
+/* Fontawesome social icons */
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }

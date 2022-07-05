@@ -1,0 +1,1 @@
+web: gunicorn Poke_inventory:app --preload

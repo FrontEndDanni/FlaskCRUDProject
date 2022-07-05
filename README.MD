@@ -1,0 +1,10 @@
+#Pokemon API
+
+##Deployment
+-Deployed on Heroku- Eventually
+
+## Running on Local Machine
+-- To get all dependencies, please follow the steps below:
+- Git clone repository
+- Create and activate virtual environment
+- pip install -r requirements.txt# FlaskCRUDProject
