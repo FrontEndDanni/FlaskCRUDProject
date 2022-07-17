@@ -14,10 +14,9 @@ def signup():
         if request.method == "POST" and form.validate_on_submit():
             email = form.email.data
             password = form.password.data
-            username = form.username.data
-            print(email, password, username)
+            print(email, password)
 
-            user = User(email, password, username = password)
+            user = User(email, password)
 
             db.session.add(user)
             db.session.commit()
@@ -39,8 +38,7 @@ def signin():
         if request.method == "POST" and form.validate_on_submit():
             email = form.email.data
             password = form.password.data
-            username = form.username.data
-            print(email, password, username)
+            print(email, password)
 
             logged_user = User.query.filter(User.email == email).first()
             if logged_user and check_password_hash(logged_user.password, password):

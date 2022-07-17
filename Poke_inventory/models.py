@@ -30,19 +30,17 @@ class User(db.Model, UserMixin):
     last_name = db.Column(db.String(150), nullable = True, default = "")
     email = db.Column(db.String(150), nullable = False)
     password = db.Column(db.String, nullable = True, default = "")
-    username = db.Column(db.String(20), nullable = False)
     g_auth_verify = db.Column(db.Boolean, default = False)
     token = db.Column(db.String, default = "", unique = True)
     date_created = db.Column(db.DateTime, nullable = False, default = datetime.utcnow)
     poke = db.relationship('Poke', backref = 'owner', lazy = True)
 
 
-    def __init__(self, email, first_name = "", last_name = "", id = "", password =  "", username = "", token = "", g_auth_verify = False):
+    def __init__(self, email, first_name = "", last_name = "", id = "", password =  "", token = "", g_auth_verify = False):
         self.id = self.set_id()
         self.first_name = first_name
         self.last_name = last_name
         self.password = self.set_password(password)
-        self.username = username
         self.email = email 
         self.token = self.set_token(24)
         self.g_auth_verify = g_auth_verify
